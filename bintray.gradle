@@ -36,12 +36,12 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
+    userOrg = properties.getProperty("bintray.userOrg")
 
     configurations = ['archives']
     pkg {
         repo = bintrayRepo
         name = bintrayName
-        userOrg = properties.getProperty("bintray.userOrg")
         desc = libraryDescription
         websiteUrl = siteUrl
         vcsUrl = gitUrl
