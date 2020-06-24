@@ -49,11 +49,11 @@ bintray {
         publicDownloadNumbers = true
         version {
             desc = libraryDescription
-            gpg {
-                sign = false //Determines whether to GPG sign the files. The default is false
-                passphrase = properties.getProperty("bintray.gpg.password")
+            // gpg {
+            //    sign = false //Determines whether to GPG sign the files. The default is false
+            //    passphrase = properties.getProperty("bintray.gpg.password")
                 //Optional. The passphrase for GPG signing'
-            }
+            //}
         }
     }
 }
